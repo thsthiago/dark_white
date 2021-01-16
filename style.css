@@ -1,0 +1,77 @@
+:root {
+  --color-dark: #333;
+  --color-element-dark: #434343;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html , body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* .dark__white, */
+.botao,
+.dark {transition: background .7s, right .7s}
+
+
+.dark__white {
+  position: relative;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: -1px -3px 30px 10px rgba(0,0,0,0.75) inset, -1px -3px 15px 1px rgba(255,255,255,0.75);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.botao {
+  content: "";
+  width: 60px;
+  height: 38px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  background: var(--color-dark);
+  z-index: 2;
+  box-shadow: -1px -3px 5px 5px rgba(0,0,0,0.75) inset;
+}
+
+.sol,
+.lua {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sol {
+  left: 15%;
+  color: #fff;
+}
+.lua {
+  right: 15%;
+  color: #000;
+}
+
+.dark {
+  background: var(--color-dark);
+}
+
+.white {
+  background: var(--color-white);
+}
